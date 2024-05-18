@@ -1,0 +1,62 @@
+ .main-grid{
+    background: lightgray;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+ }
+ .main-grid div{
+    height: 300px;
+    background-color: lightblue;
+ }
+
+ @media (max-width: 576px){
+    .main-grid{
+        display: block;
+        text-align: center;
+        
+        
+    }
+    .main-grid div{
+        width: 90%;
+        margin-top: 10px;
+        
+        background-color: lightblue;
+     }
+ }
+
+ @media (max-width: 768px) and (min-width: 577px){
+    .main-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        
+    }
+ }
+
+ @media (max-width: 992px) and (min-width: 769px){
+    .main-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        
+    }
+ }
+ @media (max-width: 1200px) and (min-width: 993px){
+    .main-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        
+    }
+ }
+
+ /*
+ Media ViewPorts Dimensions
+ Small: < 576px
+ Medium: < 768px
+ Large: < 992px
+ Extra Large: < 1200px
+ Extra Extra Large: < 1400px
+ 
+ */
